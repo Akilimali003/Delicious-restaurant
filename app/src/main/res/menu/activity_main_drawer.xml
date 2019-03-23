@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+                android:id="@+id/nav_restaurent_menu"
+                android:icon="@drawable/restaurant_icon_menu"
+                android:title="@string/menu_restaurant"/>
+        <item
+                android:id="@+id/nav_addresses_menu"
+                android:icon="@drawable/addresses_icon_menu"
+                android:title="@string/menu_addresses"/>
+        <item
+                android:id="@+id/nav_profile_menu"
+                android:icon="@drawable/profile_icon_menu"
+                android:title="@string/menu_profile"/>
+        <item
+                android:id="@+id/nav_faq_menu"
+                android:icon="@drawable/faq_icon_menu"
+                android:title="@string/menu_faq"/>
+    </group>
+
+    <item android:title="@string/menu_more_information">
+        <menu>
+            <item
+                    android:id="@+id/nav_contact_us"
+                    android:icon="@drawable/contact_us_icon_menu"
+                    android:title="@string/menu_contact_us"/>
+            <item
+                    android:id="@+id/nav_about_menu"
+                    android:icon="@drawable/about_icon_menu"
+                    android:title="@string/menu_about"/>
+        </menu>
+    </item>
+
+</menu>

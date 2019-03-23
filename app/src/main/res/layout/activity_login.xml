@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".registration.LoginActivity">
+
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:inputType="phone"
+            android:ems="10"
+            android:background="@drawable/rounded_register_edittext"
+            android:paddingLeft="5dp"
+            android:drawableLeft="@drawable/phone_number_icon_login"
+            android:drawablePadding="5dp"
+            android:id="@+id/edt_phone_number_login" android:hint="@string/phone_number"
+            android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="32dp"
+            android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="32dp"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/btn_login_login"/>
+    <Button
+            android:text="@string/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_login_login"
+            android:background="@drawable/rounded_btn_register_register"
+            android:textColor="@android:color/white"
+            app:layout_constraintEnd_toEndOf="@+id/edt_phone_number_login"
+            app:layout_constraintStart_toStartOf="@+id/edt_phone_number_login" android:layout_marginBottom="32dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    <ImageView
+            android:layout_width="336dp"
+            android:layout_height="333dp" app:srcCompat="@drawable/img_login_screen_salate"
+            android:id="@+id/imageView2"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="42dp"/>
+
+
+
+</android.support.constraint.ConstraintLayout>

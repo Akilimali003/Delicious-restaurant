@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b4602</color>
+    <color name="colorPrimaryDark">#334e2d</color>
+    <color name="colorAccent">#2b4602</color>
+    <color name="backgroundColor">#e9e7e7</color>
+    <color name="btnPhotoProfileColor">#A4ADB1</color>
+    <color name="btnRegisterColor">#A4ADB1</color>
+    <color name="editTextColor">#A4ADB1</color>
+</resources>

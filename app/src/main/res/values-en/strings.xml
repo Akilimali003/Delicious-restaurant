@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Delicious</string>
+    <string name="username">Username</string>
+    <string name="phone_number">Phone number</string>
+    <string name="password">Password</string>
+    <string name="btn_register">Create account</string>
+    <string name="btn_profile_photo">Profile photo</string>
+    <string name="btn_login">Login</string>
+    <string name="app_bar_login">Log in</string>
+    <string name="app_bar_register">Create account</string>
+    <string name="tv_already_register"><u>Already have an account ?</u></string>
+    <string name="tv_do_not_have_account">
+        <u>Do not have an account ?</u>
+    </string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Delicious</string>
+    <string name="nav_header_subtitle">delicious@restaurent.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_sign_out">Sign out</string>
+
+    <string name="menu_restaurant">Restaurant</string>
+    <string name="menu_addresses">Addresses</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_faq">FAQ</string>
+    <string name="menu_more_information">More info</string>
+    <string name="menu_contact_us">Contact us</string>
+    <string name="menu_about">About</string>
+
+</resources>
