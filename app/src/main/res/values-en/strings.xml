@@ -3,13 +3,18 @@
     <string name="app_name">Delicious</string>
     <string name="username">Username</string>
     <string name="phone_number">Phone number</string>
+    <string name="edt_mail">Mail address</string>
+    <string name="edt_address">Address</string>
     <string name="password">Password</string>
-    <string name="btn_register">Create account</string>
+    <string name="btn_register_profile">Save</string>
     <string name="btn_profile_photo">Profile photo</string>
     <string name="btn_login">Login</string>
     <string name="app_bar_login">Log in</string>
     <string name="app_bar_register">Create account</string>
-    <string name="tv_already_register"><u>Already have an account ?</u></string>
+    <string name="tv_explorer">EXPLORER</string>
+    <string name="tv_already_register">
+        <u>Already have an account ?</u>
+    </string>
     <string name="tv_do_not_have_account">
         <u>Do not have an account ?</u>
     </string>
@@ -25,9 +30,23 @@
     <string name="menu_restaurant">Restaurant</string>
     <string name="menu_addresses">Addresses</string>
     <string name="menu_profile">Profile</string>
-    <string name="menu_faq">FAQ</string>
     <string name="menu_more_information">More info</string>
     <string name="menu_contact_us">Contact us</string>
     <string name="menu_about">About</string>
+    <string name="tv_about_large_text">"Delicious 1.0\n"
+        "is a mobile application designed by Synapse-hub which manages restaurants of Goma town, thanks to it"
+        " you can ask every kind of food you want and pay at a distance, after that you'll receive all of it where you are"
+        " it's amazing that application, download the new version on play store and enjoy it."
+    </string>
+    <string name="tv_contact_us_large_text_title">For more information contact-us on:</string>
+    <string name="tv_contact_us_large_text">
+        " Web site: synapse-hub.net\n"
+        "Email: synapse-hub@synapse.net\n\n"
+        "Telephone: +(243) 977 200 045\n"
+        "                                  811 704 141\n"
+        "                                  976 629 323\n\n"
+        "Github: https://github.com/SynapseHub\n"
+        "Tweeter: @SynapseHub"
+    </string>
 
 </resources>

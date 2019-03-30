@@ -2,12 +2,15 @@
     <string name="app_name">Delicious</string>
     <string name="username">Nom d\'utilisateur</string>
     <string name="phone_number">Numero du téléphone</string>
+    <string name="edt_mail">Adresse e-mail</string>
+    <string name="edt_address">Adresse</string>
     <string name="password">Mot de passe</string>
-    <string name="btn_register">Creer compte</string>
+    <string name="btn_register_profile">Sauvegarder</string>
     <string name="btn_profile_photo">Photo du profile</string>
     <string name="btn_login">Connexion</string>
     <string name="app_bar_login">Se connecter</string>
     <string name="app_bar_register">Créer compte</string>
+    <string name="tv_explorer">EXPLORER</string>
     <string name="tv_already_register">
         <u>Déjà un compte ?</u>
     </string>
@@ -26,8 +29,22 @@
     <string name="menu_restaurant">Restaurant</string>
     <string name="menu_addresses">Adresses</string>
     <string name="menu_profile">Profile</string>
-    <string name="menu_faq">FAQ</string>
     <string name="menu_more_information">Plus d\'info</string>
     <string name="menu_contact_us">Contactez-nous</string>
     <string name="menu_about">A propos</string>
+    <string name="tv_about_large_text">"Delicious 1.0\n"
+        "est une application mobile conçu par Synapse-hub qui gere les restaurants de la ville de Goma, grace a cette"
+        " application vous pouvez commander des nourritures a distance et payer puis vous recevrez tout la ou vous etes"
+        " c'est super cette application, telechager la nouvelle version sur play store et enjoy your app."
+    </string>
+    <string name="tv_contact_us_large_text_title">Pour plus d\'information contactez-nous sur:</string>
+    <string name="tv_contact_us_large_text">
+        " Site web: synapse-hub.net\n"
+        "Email: synapse-hub@synapse.net\n\n"
+        "Téléphone: +(243) 977 200 045\n"
+        "                                  811 704 141\n"
+        "                                  976 629 323\n\n"
+        "Github: https://github.com/SynapseHub\n"
+        "Tweeter: @SynapseHub"
+    </string>
 </resources>

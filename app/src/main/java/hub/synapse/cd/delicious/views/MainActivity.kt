@@ -1,5 +1,6 @@
 package hub.synapse.cd.delicious.views
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.design.widget.Snackbar
 import android.support.design.widget.NavigationView
@@ -9,9 +10,12 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import hub.synapse.cd.delicious.R
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.addresses_fragment_layout.*
 import kotlinx.android.synthetic.main.app_bar_main.*
+import kotlinx.android.synthetic.main.profile_fragment_layout.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
@@ -19,11 +23,18 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
+        supportActionBar?.title = "Delicious"
 
-        fab.setOnClickListener { view ->
-            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                .setAction("Action", null).show()
-        }
+//        fab.setOnClickListener { view ->
+//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                .setAction("Action", null).show()
+//        }
+
+
+        //call the Restaurant fragment once the application is being launched
+        val fragment = RestaurantFragment.newInstance()
+        replaceToFragment(fragment)
+
 
         val toggle = ActionBarDrawerToggle(
             this, drawer_layout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close
@@ -70,9 +81,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.nav_profile_menu -> {
                 replaceToFragment(ProfileFragment())
-            }
-            R.id.nav_faq_menu -> {
-                replaceToFragment(FaqFragment())
             }
             R.id.nav_contact_us -> {
                 replaceToFragment(ContactUsFragment())

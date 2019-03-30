@@ -4,7 +4,7 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/backgroundColor"
+        android:background="@drawable/img_background"
         android:orientation="vertical">
 
     <ScrollView
@@ -23,7 +23,7 @@
             android:layout_margin="10dp"
             app:cardCornerRadius="4dp"
             android:layout_width="match_parent"
-            android:layout_height="350dp">
+            android:layout_height="wrap_content">
 
         <RelativeLayout
                 android:padding="16dp"
@@ -33,11 +33,12 @@
 
             <ImageView
                     android:scaleType="fitXY"
-                    android:id="@+id/iv_icon"
+                    android:id="@+id/imv_kivu_restaurant"
                     android:src="@drawable/cuisine_africaine"
                     android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:layout_marginRight="16dp"
+                    android:layout_alignParentBottom="true"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"/>
 
@@ -45,13 +46,15 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="5dp"
                     android:layout_marginStart="10dp"
                     android:layout_marginLeft="10dp"
                     android:text="KIVU RESTAURANT"
                     android:textColor="@android:color/white"
                     android:textStyle="bold"
                     android:textSize="25sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
             
@@ -65,28 +68,32 @@
 
             <TextView
                     android:layout_marginLeft="10dp"
-                    android:text="QUI SOMMES-NOUS"
+                    android:layout_marginBottom="5dp"
+                    android:text="QUI SOMMES-NOUS ?"
                     android:textColor="@color/colorPrimaryDark"
                     android:textStyle="bold"
-                    android:textSize="26sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:layout_marginLeft="10dp"
-                    android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue..."
-                    android:textColor="@android:color/black"
-                    android:textSize="17sp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-            <TextView
-                    android:id="@+id/tv_explorer"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginTop="5dp"
-                    android:text="EXPLORER "
-                    android:textColor="@android:color/holo_blue_dark"
                     android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/tvDesc"
+                    android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue."
+                    android:textColor="@android:color/black"
+                    android:maxLines="6"
+                    android:ellipsize="end"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/tv_explorer_kivu_restaurant"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/tv_explorer"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18sp"
                     android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
@@ -99,7 +106,7 @@
                     android:layout_margin="10dp"
                     app:cardCornerRadius="4dp"
                     android:layout_width="match_parent"
-                    android:layout_height="350dp">
+                    android:layout_height="wrap_content">
 
                 <RelativeLayout
                         android:padding="16dp"
@@ -109,10 +116,12 @@
 
                     <ImageView
                             android:scaleType="fitXY"
-                            android:src="@drawable/godofwar"
+                            android:id="@+id/imv_gloire_a_dieu_restaurant"
+                            android:src="@drawable/navigation_drawer_img"
                             android:layout_alignParentLeft="true"
+                            android:layout_alignParentRight="true"
                             android:layout_alignParentTop="true"
-                            android:layout_marginRight="16dp"
+                            android:layout_alignParentBottom="true"
                             android:layout_width="wrap_content"
                             android:layout_height="match_parent"/>
 
@@ -120,13 +129,15 @@
                             android:layout_alignParentLeft="true"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentBottom="true"
-                            android:layout_marginBottom="10dp"
+                            android:layout_marginBottom="5dp"
                             android:layout_marginStart="10dp"
                             android:layout_marginLeft="10dp"
-                            android:text="GLOIRE A DIEU REST."
+                            android:text="GLOIRE A DIEU RESTAURANT"
                             android:textColor="@android:color/white"
                             android:textStyle="bold"
                             android:textSize="25sp"
+                            android:maxLines="1"
+                            android:ellipsize="end"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>
 
@@ -140,28 +151,31 @@
 
                     <TextView
                             android:layout_marginLeft="10dp"
-                            android:text="QUI SOMMES-NOUS"
+                            android:layout_marginBottom="5dp"
+                            android:text="QUI SOMMES-NOUS ?"
                             android:textColor="@color/colorPrimaryDark"
                             android:textStyle="bold"
-                            android:textSize="26sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    <TextView
-                            android:layout_marginLeft="10dp"
-                            android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue..."
-                            android:textColor="@android:color/black"
-                            android:textSize="17sp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-
-                    <TextView
-                            android:id="@+id/tv_explorer2"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginTop="5dp"
-                            android:text="EXPLORER "
-                            android:textColor="@android:color/holo_blue_dark"
                             android:textSize="20sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"
+                            android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue."
+                            android:textColor="@android:color/black"
+                            android:maxLines="6"
+                            android:ellipsize="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    <TextView
+                            android:id="@+id/tv_explorer_gloire_a_dieu_restaurant"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/tv_explorer"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:textSize="18sp"
                             android:textStyle="bold"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"/>

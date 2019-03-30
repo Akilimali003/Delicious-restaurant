@@ -16,10 +16,6 @@
                 android:id="@+id/nav_profile_menu"
                 android:icon="@drawable/profile_icon_menu"
                 android:title="@string/menu_profile"/>
-        <item
-                android:id="@+id/nav_faq_menu"
-                android:icon="@drawable/faq_icon_menu"
-                android:title="@string/menu_faq"/>
     </group>
 
     <item android:title="@string/menu_more_information">

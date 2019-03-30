@@ -1,18 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:background="#FF00"
-              android:gravity="center_vertical"
-              android:orientation="vertical">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:padding="16dp"
+                android:background="@drawable/img_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TextView
-            android:id="@+id/labellogin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Profile fragment"
-            android:textSize="45dp"
-            android:layout_gravity="center_horizontal"
-            android:textStyle="bold|italic"
-            android:textColor="@android:color/darker_gray"/>
-</LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/selectphoto_imageview_profile"
+            android:layout_marginTop="1dp"
+            android:layout_alignRight="@+id/btn_select_profile_photo" android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp" android:layout_alignEnd="@+id/btn_select_profile_photo" android:layout_marginLeft="-2dp"
+            android:layout_marginStart="-2dp" android:layout_alignLeft="@+id/btn_select_profile_photo"
+            android:layout_alignStart="@+id/btn_select_profile_photo" android:layout_alignTop="@+id/btn_select_profile_photo"
+            android:layout_marginBottom="-1dp" android:layout_alignBottom="@+id/btn_select_profile_photo"/>
+
+    <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="@string/btn_profile_photo"
+            android:background="@drawable/rounded_btn_select_profile_photo"
+            android:gravity="center"
+            android:id="@+id/btn_select_profile_photo"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp" android:layout_centerHorizontal="true"/>
+    <EditText
+            android:background="@drawable/rounded_profile_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/username_icone"
+            android:drawablePadding="10dp"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/edt_username_profile"
+            android:layout_marginTop="23dp"
+            android:layout_below="@+id/btn_select_profile_photo" android:hint="@string/username"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+    <EditText
+            android:background="@drawable/rounded_profile_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textPersonName"
+            android:drawableLeft="@drawable/mail_address_icon"
+            android:drawablePadding="10dp"
+            android:hint="@string/edt_mail"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/edt_address_profile"
+            android:layout_marginTop="9dp" android:layout_below="@+id/edt_username_profile"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+    <EditText
+            android:background="@drawable/rounded_profile_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/address_icon"
+            android:drawablePadding="10dp"
+            android:hint="@string/edt_address"
+            android:paddingLeft="10dp"
+            android:ems="10"
+            android:id="@+id/edt_mail_profile"
+            android:layout_marginTop="9dp" android:layout_below="@+id/edt_address_profile"
+            android:layout_alignParentStart="true" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            android:layout_alignParentLeft="true" android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="16dp" android:layout_marginEnd="16dp"/>
+    <Button
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_btn_profile"
+            android:text="@string/btn_register_profile"
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/save_icon"
+            android:drawablePadding="-35dp"
+            android:id="@+id/btn_save_profile"
+            android:layout_marginTop="14dp" android:layout_below="@+id/edt_mail_profile"
+            android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
+            android:layout_marginRight="31dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
+            android:layout_marginLeft="33dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+</RelativeLayout>

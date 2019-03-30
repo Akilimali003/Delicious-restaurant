@@ -7,12 +7,13 @@
     android:background="@android:color/white"
     tools:context=".registration.LoginActivity">
 
+
     <EditText
             android:layout_width="0dp"
             android:layout_height="45dp"
             android:inputType="phone"
             android:ems="10"
-            android:background="@drawable/rounded_register_edittext"
+            android:background="@drawable/rounded_profile_edittext"
             android:paddingLeft="5dp"
             android:drawableLeft="@drawable/phone_number_icon_login"
             android:drawablePadding="5dp"
@@ -28,7 +29,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:id="@+id/btn_login_login"
-            android:background="@drawable/rounded_btn_register_register"
+            android:background="@drawable/rounded_btn_login_login"
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="@+id/edt_phone_number_login"
             app:layout_constraintStart_toStartOf="@+id/edt_phone_number_login" android:layout_marginBottom="32dp"
