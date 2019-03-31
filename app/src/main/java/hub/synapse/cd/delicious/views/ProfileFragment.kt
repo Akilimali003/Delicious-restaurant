@@ -1,6 +1,7 @@
 package hub.synapse.cd.delicious.views
 
 import android.app.Activity
+import android.content.ContentResolver
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -15,17 +16,21 @@ import kotlinx.android.synthetic.main.profile_fragment_layout.*
 class ProfileFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-
-//        btn_select_profile_photo.setOnClickListener {
-//            //choose an Image
-//            val intent = Intent(Intent.ACTION_PICK)
-//            intent.type = "image/*"
-//            startActivityForResult(intent, 0)
-//        }
-
         return LayoutInflater.from(container?.context).inflate(R.layout.profile_fragment_layout, container, false)
     }
 
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        btn_select_profile_photo.setOnClickListener {
+            //choose an Image
+            val intent = Intent(Intent.ACTION_PICK)
+            intent.type = "image/*"
+            startActivityForResult(intent, 0)
+        }
+
+    }
 
 //    var selectPhotoUri: Uri? = null
 //    //the method which help us to check the selected photo in the phone location
@@ -40,9 +45,6 @@ class ProfileFragment: Fragment() {
 //            selectphoto_imageview_profile.setImageBitmap(bitmap)
 //
 //            btn_select_profile_photo.alpha = 0f
-//
-////            /////////val bitmapDrawable = BitmapDrawable(bitmap)
-////            /////////btn_select_photo_register.setBackgroundDrawable(bitmapDrawable)
 //        }
 //    }
 }
