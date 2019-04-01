@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "378308861438",
+    "firebase_url": "https://delicious-69cff.firebaseio.com",
+    "project_id": "delicious-69cff",
+    "storage_bucket": "delicious-69cff.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378308861438:android:24cef6d11bda5921",
+        "android_client_info": {
+          "package_name": "hub.synapse.cd.delicious"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDY7edb6HWhV1-z4a6P-yLGQO8hF-AEXdA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378308861438-u4tad962k1a1t7u17tcs1drvljpommlo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
