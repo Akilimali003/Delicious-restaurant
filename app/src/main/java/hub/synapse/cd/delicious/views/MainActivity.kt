@@ -10,8 +10,11 @@ import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
 import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 import hub.synapse.cd.delicious.R
+import hub.synapse.cd.delicious.registration.PhoneAuthActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.addresses_fragment_layout.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -19,16 +22,16 @@ import kotlinx.android.synthetic.main.profile_fragment_layout.*
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
+    lateinit var mAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setSupportActionBar(toolbar)
         supportActionBar?.title = "Delicious"
 
-//        fab.setOnClickListener { view ->
-//            Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                .setAction("Action", null).show()
-//        }
+        //create the instance of FirebaseAuth
+        mAuth = FirebaseAuth.getInstance()
 
 
         //call the Restaurant fragment once the application is being launched
@@ -64,9 +67,17 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
         when (item.itemId) {
-            R.id.action_settings -> return true
-            else -> return super.onOptionsItemSelected(item)
+            R.id.action_settings -> {
+                return true
+            }
+            R.id.action_sign_out -> {
+                mAuth.signOut()
+                val intent = Intent(this, PhoneAuthActivity::class.java)
+//                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                startActivity(intent)
+            }
         }
+        return super.onOptionsItemSelected(item)
     }
 
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
@@ -98,5 +109,12 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val fm = supportFragmentManager.beginTransaction()
         fm.replace(R.id.frameLayout, fragTo)
         fm.commit()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if (mAuth.currentUser == null){
+            startActivity(Intent(this, PhoneAuthActivity::class.java))
+        }else{}
     }
 }

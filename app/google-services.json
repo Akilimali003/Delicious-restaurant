@@ -13,7 +13,16 @@
           "package_name": "hub.synapse.cd.delicious"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "378308861438-k1cj0kjumkopstf7uehdprmdfghs5mg1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "hub.synapse.cd.delicious",
+            "certificate_hash": "3f558558b58360f13726cc3b687a76b979be9c8d"
+          }
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDY7edb6HWhV1-z4a6P-yLGQO8hF-AEXdA"
