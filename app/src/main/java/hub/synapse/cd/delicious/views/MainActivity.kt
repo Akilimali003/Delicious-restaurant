@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             R.id.action_sign_out -> {
                 mAuth.signOut()
                 val intent = Intent(this, PhoneAuthActivity::class.java)
-//                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
             }
         }
@@ -115,6 +115,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onStart()
         if (mAuth.currentUser == null){
             startActivity(Intent(this, PhoneAuthActivity::class.java))
-        }else{}
+        }else{
+            Toast.makeText(this, "Welcome ${mAuth.currentUser}", Toast.LENGTH_SHORT).show()
+        }
     }
 }

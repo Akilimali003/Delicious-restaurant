@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">Delicious</string>
     <string name="username">Username</string>
-    <string name="phone_number">+(Code) Phone number</string>
+    <string name="phone_number">+(Code) | Phone number</string>
     <string name="edt_mail">Mail address</string>
     <string name="edt_address">Address</string>
     <string name="password">Password</string>
@@ -14,6 +14,7 @@
     <string name="edt_verification_code">- - - Verification code - - -</string>
     <string name="app_bar_register">Create account</string>
     <string name="tv_explorer">EXPLORER</string>
+    <string name="tv_resend_sms"><u>Resend SMS</u></string>
     <string name="tv_already_register">
         <u>Already have an account ?</u>
     </string>

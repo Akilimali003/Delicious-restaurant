@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Delicious</string>
     <string name="username">Nom d\'utilisateur</string>
-    <string name="phone_number">+(Code) Numero du téléphone</string>
+    <string name="phone_number">+(Code) | Numero du téléphone</string>
     <string name="edt_mail">Adresse e-mail</string>
     <string name="edt_address">Adresse</string>
     <string name="password">Mot de passe</string>
@@ -13,6 +13,7 @@
     <string name="app_bar_login">Se connecter</string>
     <string name="app_bar_register">Créer compte</string>
     <string name="tv_explorer">EXPLORER</string>
+    <string name="tv_resend_sms"><u>Reenvoyer SMS</u></string>
     <string name="tv_already_register">
         <u>Déjà un compte ?</u>
     </string>
@@ -44,8 +45,8 @@
         " Site web: synapse-hub.net\n"
         "Email: synapse-hub@synapse.net\n\n"
         "Téléphone: +(243) 977 200 045\n"
-        "                                  811 704 141\n"
-        "                                  976 629 323\n\n"
+        " 811 704 141\n"
+        " 976 629 323\n\n"
         "Github: https://github.com/SynapseHub\n"
         "Tweeter: @SynapseHub"
     </string>

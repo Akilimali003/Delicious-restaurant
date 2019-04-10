@@ -6,10 +6,12 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
+import android.support.constraint.R.attr.content
 import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import hub.synapse.cd.delicious.R
 import kotlinx.android.synthetic.main.profile_fragment_layout.*
 
@@ -30,6 +32,10 @@ class ProfileFragment: Fragment() {
             startActivityForResult(intent, 0)
         }
 
+        btn_save_profile.setOnClickListener {
+            Toast.makeText(activity, "Not yet use", Toast.LENGTH_LONG).show()
+        }
+
     }
 
 //    var selectPhotoUri: Uri? = null
@@ -40,7 +46,7 @@ class ProfileFragment: Fragment() {
 //        if (requestCode == 0 && resultCode == Activity.RESULT_OK && data != null){
 //            //proceed and check what the selected image was...
 //            selectPhotoUri = data.data
-//            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver ,selectPhotoUri)
+//            val bitmap = MediaStore.Images.Media.getBitmap(contentResolver, selectPhotoUri)
 //
 //            selectphoto_imageview_profile.setImageBitmap(bitmap)
 //

@@ -16,13 +16,17 @@ import java.util.concurrent.TimeUnit
 
 class PhoneAuthActivity : AppCompatActivity() {
 
+    lateinit var resendToken : PhoneAuthProvider.ForceResendingToken
+    lateinit var mAuth : FirebaseAuth
     lateinit var mCallBacks: PhoneAuthProvider.OnVerificationStateChangedCallbacks
-    lateinit var mAuth: FirebaseAuth
     var verificationId = ""
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_phone_auth)
+
+        tv_resend_sms_phone_auth_verification.isEnabled = false
 
         mAuth = FirebaseAuth.getInstance()
 
@@ -35,53 +39,94 @@ class PhoneAuthActivity : AppCompatActivity() {
             progressBar.visibility = View.VISIBLE
             authenticate()
         }
+
+        tv_resend_sms_phone_auth_verification.setOnClickListener {
+            resendCode()
+        }
     }
 
-    private fun verificationCallBacks(){
-        mCallBacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks(){
+    private fun verificationCallBacks() {
+        mCallBacks = object : PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
             override fun onVerificationCompleted(credential: PhoneAuthCredential) {
                 progressBar?.visibility = View.INVISIBLE
                 signIn(credential)
+                tv_resend_sms_phone_auth_verification.isEnabled = false
             }
 
-            override fun onVerificationFailed(p0: FirebaseException?) {}
+            override fun onVerificationFailed(p0: FirebaseException?) {
 
-            override fun onCodeSent(verification: String?, p1: PhoneAuthProvider.ForceResendingToken?) {
-                super.onCodeSent(verification, p1)
+            }
+
+            override fun onCodeSent(verification: String?, token: PhoneAuthProvider.ForceResendingToken) {
+                super.onCodeSent(verification, token)
                 verificationId = verification.toString()
+                resendToken = token
                 progressBar.visibility = View.INVISIBLE
+                tv_resend_sms_phone_auth_verification.isEnabled = true
             }
 
         }
     }
 
-    private fun authenticate(){
+    private fun authenticate() {
         val verificationNum = edt_virification_authentication.text.toString()
-        val authNum2 = AuthNum2(verificationNum)
-        val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(verificationId, authNum2.verifNumber)
-        signIn(credential)
+        if (!verificationNum.isEmpty()) {
+            val credential: PhoneAuthCredential = PhoneAuthProvider.getCredential(verificationId, verificationNum)
+            signIn(credential)
+        } else {
+            Toast.makeText(this, "Completer les champs vide s'il vous plait !!!", Toast.LENGTH_LONG).show()
+            progressBar.visibility = View.INVISIBLE
+        }
     }
 
-    private fun verify(){
+    private fun verify() {
         verificationCallBacks()
         val phoneNum = edt_phone_number_authentication.text.toString()
-        val authNum = AuthNum(phoneNum)
-        PhoneAuthProvider.getInstance().verifyPhoneNumber(authNum.phoneNumber,60, TimeUnit.SECONDS, this, mCallBacks)
-    }
 
-    private fun signIn(credential: PhoneAuthCredential){
-        mAuth.signInWithCredential(credential).addOnCompleteListener{
-            if (it.isSuccessful){
-                toast("Logged in successfully !")
-                startActivity(Intent(this, MainActivity::class.java))
-            } else{
-                toast("Error: ${it.exception}")
-            }
+        if (phoneNum.isEmpty()) {
+            toast("Completer les champs vide s'il vous plait !!!")
+            progressBar.visibility = View.INVISIBLE
+        } else {
+            PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                phoneNum,
+                60,
+                TimeUnit.SECONDS,
+                this,
+                mCallBacks
+            )
         }
     }
 
-    private fun toast(msg:String){
-        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+    private fun resendCode() {
+        verificationCallBacks()
+        val phoneNum = edt_phone_number_authentication.text.toString()
+
+        if (phoneNum.isEmpty()) {
+            toast("Completer les champs vide s'il vous plait !!!")
+            progressBar.visibility = View.INVISIBLE
+        } else {
+            PhoneAuthProvider.getInstance().verifyPhoneNumber(
+                phoneNum,
+                60,
+                TimeUnit.SECONDS,
+                this,
+                mCallBacks,
+                resendToken
+            )
+        }
     }
 
+    private fun signIn(credential: PhoneAuthCredential) {
+        mAuth.signInWithCredential(credential)
+            .addOnCompleteListener {
+                if (it.isSuccessful) {
+                    toast("Logged in successfully !")
+                    startActivity(Intent(this, MainActivity::class.java))
+                }
+        }
+    }
+
+    private fun toast(msg: String) {
+        Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+    }
 }

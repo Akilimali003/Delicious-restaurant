@@ -14,6 +14,5 @@ class RestaurantFragment: Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         return LayoutInflater.from(container?.context).inflate(R.layout.restaurant_fragment_layout,container,false)
-
     }
 }
