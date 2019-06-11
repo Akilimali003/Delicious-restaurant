@@ -80,7 +80,7 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
                     android:id="@+id/tvDesc"
-                    android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue."
+                    android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katoyi, av. blablabla No. 28, soyez le bienvenue."
                     android:textColor="@android:color/black"
                     android:maxLines="6"
                     android:ellipsize="end"

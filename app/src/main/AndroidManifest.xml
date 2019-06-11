@@ -9,7 +9,9 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".registration.PhoneAuthActivity">
+        <activity
+                android:name=".views.MainActivity"
+                android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
@@ -17,11 +19,13 @@
             </intent-filter>
         </activity>
         <activity
-                android:name=".views.MainActivity"
-                android:label="@string/title_activity_main"
+                android:name=".registration.PhoneAuthActivity"
                 android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity android:name=".views.AddressDescription">
+        </activity>
+        <activity android:name=".registration.PhoneAuthActivity2"
+                  android:theme="@style/AppTheme.NoActionBar">
         </activity>
     </application>
 

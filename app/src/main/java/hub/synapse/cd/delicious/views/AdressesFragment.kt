@@ -25,5 +25,4 @@ class AdressesFragment: Fragment() {
             startActivity(Intent(activity, AddressDescription::class.java))
         }
     }
-
 }

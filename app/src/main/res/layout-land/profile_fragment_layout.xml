@@ -8,6 +8,14 @@
                 android:layout_height="match_parent">
 
 
+    <ImageView
+            android:background="@drawable/rounded_camera_profile"
+            android:layout_width="55dp" android:elevation="10dp"
+            android:layout_height="35dp" android:src="@drawable/ic_camera_profile"
+            android:layout_alignEnd="@+id/selectphoto_imageview_profile"
+            android:id="@+id/imageViewSelectPhotoProfile" android:layout_marginEnd="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="144dp"/>
     <de.hdodenhof.circleimageview.CircleImageView
             android:layout_width="150dp"
             android:layout_height="150dp"
@@ -27,10 +35,11 @@
             android:gravity="center"
             android:id="@+id/btn_select_profile_photo"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="8dp" android:layout_centerHorizontal="true"/>
+            android:layout_marginTop="34dp" android:layout_alignParentStart="true" android:layout_marginLeft="39dp"
+            android:layout_marginStart="39dp" android:layout_alignParentLeft="true"/>
     <EditText
             android:background="@drawable/rounded_profile_edittext"
-            android:layout_width="match_parent"
+            android:layout_width="297dp"
             android:layout_height="45dp"
             android:inputType="textPersonName"
             android:drawableLeft="@drawable/username_icone"
@@ -38,14 +47,14 @@
             android:paddingLeft="10dp"
             android:ems="10"
             android:id="@+id/edt_username_profile"
-            android:layout_marginTop="23dp"
-            android:layout_below="@+id/btn_select_profile_photo" android:hint="@string/username"
+            android:hint="@string/username"
             android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+            android:layout_marginRight="32dp" android:layout_marginEnd="32dp"
+            android:layout_alignTop="@+id/selectphoto_imageview_profile" android:layout_marginTop="-1dp"
+    />
     <EditText
             android:background="@drawable/rounded_profile_edittext"
-            android:layout_width="match_parent"
+            android:layout_width="297dp"
             android:layout_height="45dp"
             android:inputType="textPersonName"
             android:drawableLeft="@drawable/mail_address_icon"
@@ -54,13 +63,14 @@
             android:paddingLeft="10dp"
             android:ems="10"
             android:id="@+id/edt_address_profile"
-            android:layout_marginTop="9dp" android:layout_below="@+id/edt_username_profile"
+            android:layout_marginTop="8dp" android:layout_below="@+id/edt_username_profile"
             android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
-            android:layout_marginRight="16dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
-            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+            android:layout_marginRight="32dp" android:layout_marginEnd="32dp"
+            android:layout_marginLeft="1dp" android:layout_marginStart="1dp"
+            android:layout_alignLeft="@+id/edt_username_profile" android:layout_alignStart="@+id/edt_username_profile"/>
     <EditText
             android:background="@drawable/rounded_profile_edittext"
-            android:layout_width="match_parent"
+            android:layout_width="281dp"
             android:layout_height="45dp"
             android:inputType="textEmailAddress"
             android:drawableLeft="@drawable/address_icon"
@@ -69,22 +79,22 @@
             android:paddingLeft="10dp"
             android:ems="10"
             android:id="@+id/edt_mail_profile"
-            android:layout_marginTop="9dp" android:layout_below="@+id/edt_address_profile"
-            android:layout_alignParentStart="true" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
-            android:layout_alignParentLeft="true" android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" android:layout_marginRight="16dp" android:layout_marginEnd="16dp"/>
+            android:layout_marginTop="12dp" android:layout_below="@+id/edt_address_profile"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true" android:layout_marginRight="32dp" android:layout_marginEnd="32dp"
+            android:layout_marginLeft="-1dp" android:layout_marginStart="-1dp"
+            android:layout_alignLeft="@+id/edt_address_profile" android:layout_alignStart="@+id/edt_address_profile"/>
     <Button
             android:textColor="@android:color/white"
             android:background="@drawable/rounded_btn_profile"
             android:text="@string/btn_register_profile"
-            android:layout_width="match_parent"
+            android:layout_width="498dp"
             android:paddingLeft="20dp"
             android:layout_height="45dp"
             android:drawableLeft="@drawable/save_icon"
             android:drawablePadding="-35dp"
             android:id="@+id/btn_save_profile"
-            android:layout_marginTop="14dp" android:layout_below="@+id/edt_mail_profile"
             android:layout_alignParentEnd="true" android:layout_alignParentRight="true"
-            android:layout_marginRight="31dp" android:layout_marginEnd="16dp" android:layout_alignParentStart="true"
-            android:layout_marginLeft="33dp" android:layout_marginStart="16dp" android:layout_alignParentLeft="true"/>
+            android:layout_marginRight="30dp" android:layout_marginEnd="30dp"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="13dp"/>
 </RelativeLayout>

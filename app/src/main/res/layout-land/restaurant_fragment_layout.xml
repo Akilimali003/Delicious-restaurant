@@ -35,6 +35,9 @@
                     android:textColor="@android:color/black"
                     android:textStyle="bold"
                     android:textSize="20sp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:ems="25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 
@@ -45,7 +48,7 @@
                     android:text="Restaurant qui fournis les cuisines, italienne, americaine, chinoise et congolaise, nous sommes situer a Katayi, av. blablabla No. 28, soyez le bienvenue."
                     android:maxLines="1"
                     android:ellipsize="end"
-                    android:ems="12"
+                    android:ems="25"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
 

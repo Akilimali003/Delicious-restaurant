@@ -35,8 +35,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
 
 
         //call the Restaurant fragment once the application is being launched
-        val fragment = RestaurantFragment.newInstance()
-        replaceToFragment(fragment)
+        replaceToFragment(RestaurantFragment())
 
 
         val toggle = ActionBarDrawerToggle(
@@ -46,6 +45,8 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         toggle.syncState()
 
         nav_view.setNavigationItemSelectedListener(this)
+
+        verifyUserIsLoggedIn()
     }
 
     override fun onBackPressed() {
@@ -84,8 +85,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.nav_restaurent_menu -> {
-                val fragment = RestaurantFragment.newInstance()
-                replaceToFragment(fragment)
+                replaceToFragment(RestaurantFragment())
             }
             R.id.nav_addresses_menu -> {
                 replaceToFragment(AdressesFragment())
@@ -115,8 +115,16 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         super.onStart()
         if (mAuth.currentUser == null){
             startActivity(Intent(this, PhoneAuthActivity::class.java))
-        }else{
-            Toast.makeText(this, "Welcome ${mAuth.currentUser}", Toast.LENGTH_SHORT).show()
+        }
+    }
+
+    //verify if the user is already logged in
+    private fun verifyUserIsLoggedIn(){
+        val uid = FirebaseAuth.getInstance().uid
+        if (uid == null){
+            val intent = Intent(this, PhoneAuthActivity::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(intent)
         }
     }
 }

@@ -10,10 +10,13 @@
     <string name="btn_profile_photo">Profile photo</string>
     <string name="btn_login">Login</string>
     <string name="app_bar_login">Log in</string>
-    <string name="btn_verification_code">Verification</string>
+    <string name="btn_verification_code">Next</string>
     <string name="edt_verification_code">- - - Verification code - - -</string>
     <string name="app_bar_register">Create account</string>
     <string name="tv_explorer">EXPLORER</string>
+    <string name="tv_verify">Verify</string>
+    <string name="tv_verify_detail">Waiting to automatically detect an SMS sent to </string>
+    <string name="tv_instruction_auth">Delicious will send an SMS to verify your phone number.\nEnter your country code and phone number. </string>
     <string name="tv_resend_sms"><u>Resend SMS</u></string>
     <string name="tv_already_register">
         <u>Already have an account ?</u>

@@ -25,7 +25,7 @@ class ProfileFragment: Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btn_select_profile_photo.setOnClickListener {
+        imageViewSelectPhotoProfile.setOnClickListener {
             //choose an Image
             val intent = Intent(Intent.ACTION_PICK)
             intent.type = "image/*"

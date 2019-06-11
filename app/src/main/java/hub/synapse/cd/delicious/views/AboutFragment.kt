@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import hub.synapse.cd.delicious.R
+import kotlinx.android.synthetic.main.addresses_fragment_layout.*
 
 class AboutFragment: Fragment() {
 
@@ -17,6 +18,11 @@ class AboutFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Toast.makeText(activity, "Yes this is Toast! ", Toast.LENGTH_SHORT).show()
+        //Test to implement some methods in the fragments
+//        toast("Yes this is a Toast! ")
+    }
+
+    private fun toast(msg: String?){
+        Toast.makeText(activity, msg, Toast.LENGTH_LONG).show()
     }
 }
