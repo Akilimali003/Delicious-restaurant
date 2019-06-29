@@ -9,7 +9,7 @@
     <string name="btn_profile_photo">Photo du profile</string>
     <string name="btn_login">Connexion</string>
     <string name="btn_verification_code">Suivent</string>
-    <string name="edt_verification_code">- - - Code de vérification - - -</string>
+    <string name="edt_verification_code">_ _ _ \t\t _ _ _</string>
     <string name="app_bar_login">Se connecter</string>
     <string name="app_bar_register">Créer compte</string>
     <string name="tv_explorer">EXPLORER</string>

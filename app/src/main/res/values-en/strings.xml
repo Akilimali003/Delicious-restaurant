@@ -11,7 +11,7 @@
     <string name="btn_login">Login</string>
     <string name="app_bar_login">Log in</string>
     <string name="btn_verification_code">Next</string>
-    <string name="edt_verification_code">- - - Verification code - - -</string>
+    <string name="edt_verification_code">_ _ _ \t\t _ _ _</string>
     <string name="app_bar_register">Create account</string>
     <string name="tv_explorer">EXPLORER</string>
     <string name="tv_verify">Verify</string>
