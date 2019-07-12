@@ -11,7 +11,7 @@ class FieldsContracts {
 
     companion object{
 
-        const val SYNC_STATUS="syncstatus"
+        const val SYNC_STATUS="sync_status"
         const val deliciousDB:String="DelicRes.DB"
 
         //1. Tables
@@ -20,7 +20,7 @@ class FieldsContracts {
 
         //2. Tables's properties
         //2.1. Table Restaurant
-        private const val r_id="id"
+        const val r_id="id"
         const val r_name="r_name"
         const val r_location="r_location"
         const val r_phone="r_phone"
@@ -51,7 +51,8 @@ class FieldsContracts {
                 r_details + " VARCHAR (250), " +
                 r_image + " VARCHAR (250), " +
                 r_latitude + " DOUBLE, " +
-                r_longitude + " DOUBLE ) "
+                r_longitude + " DOUBLE, " +
+                SYNC_STATUS + " INTEGER ) "
 
         const val drop_table_restaurant:String="DROP TABLE IF EXISTS $TableRestaurant"
 
