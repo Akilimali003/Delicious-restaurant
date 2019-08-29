@@ -1,0 +1,135 @@
+[33mcommit 81018ab2a111345ea776a113554e8714287b9d72[m[33m ([m[1;36mHEAD -> [m[1;32mgamer-update-v1[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Akilimali <Akilimalisamuelvijey@gmail.com>
+Date:   Thu Aug 29 00:55:30 2019 +0300
+
+    Nouvelle cofiguration des gradles
+
+[33mcommit 3ed139acc9c8e4eefe08554a731c6057b8899800[m
+Merge: e20f486 8d41ff9
+Author: Michel ISAMUNA <misamuna@gmail.com>
+Date:   Tue Aug 6 00:09:28 2019 +0200
+
+    Merge pull request #10 from Akilimali003/ft-upd-gamer-v1
+    
+    Adding missing methods and statements in Helper and FieldsContrats
+
+[33mcommit 8d41ff9335e831464c1705008ac1f806c9bec078[m[33m ([m[1;31morigin/ft-upd-gamer-v1[m[33m)[m
+Author: michelo243 <misamuna@gmail.com>
+Date:   Tue Aug 6 00:02:18 2019 +0200
+
+    Adding missing methods and statements in Helper class and FieldsContracts class
+
+[33mcommit e20f486e4a6bd00e88c306273de7543dfed6e016[m
+Merge: b81948d bf77f75
+Author: Michel ISAMUNA <misamuna@gmail.com>
+Date:   Sun Jul 14 22:47:25 2019 +0200
+
+    Merge pull request #2 from Akilimali003/add_helper_database
+    
+    Add helper database and some Utils methods
+
+[33mcommit bf77f75ecbdb5fa7d60700e65bfcf8e9d261dec6[m[33m ([m[1;31morigin/add_helper_database[m[33m)[m
+Merge: e4a7a40 b81948d
+Author: Michel ISAMUNA <misamuna@gmail.com>
+Date:   Sun Jul 14 22:46:51 2019 +0200
+
+    Merge branch 'master' into add_helper_database
+
+[33mcommit b81948d584f00cc1e23e556b13bae9f47653975b[m
+Merge: 1d37f6c f8ca122
+Author: Michel ISAMUNA <misamuna@gmail.com>
+Date:   Sun Jul 14 22:38:03 2019 +0200
+
+    Merge pull request #1 from Akilimali003/add_ws_parser
+    
+    Adding parser for webservice
+
+[33mcommit e4a7a4090f8140dcb9cbf5b0ad2795d7ac47c8c8[m
+Author: michelo243 <misamuna@gmail.com>
+Date:   Fri Jul 12 06:08:47 2019 +0200
+
+    Step 2 Helper and FieldsContracts update. Adding Utils class
+
+[33mcommit 698303b8bfc3aa06226655c404cde61a6121e8e3[m
+Author: michelo243 <misamuna@gmail.com>
+Date:   Fri Jul 12 05:11:00 2019 +0200
+
+    adding Helper class and contract
+
+[33mcommit f8ca12219f213a00e386dba67b8a527889ba2811[m[33m ([m[1;31morigin/add_ws_parser[m[33m)[m
+Author: michelo243 <misamuna@gmail.com>
+Date:   Thu Jul 11 14:24:50 2019 +0200
+
+    Adding parser for webservice
+
+[33mcommit 1d37f6c2c330e321bf49f6d2f3f9fb895518290b[m
+Author: Akilimali <Akilimalisamuelvijey@gmail.com>
+Date:   Sat Jun 29 15:46:58 2019 +0300
+
+    Update for login activity landscape mode
+
+[33mcommit 3240ed288b8b294f41032e31d12d81d3e5f7789a[m
+Author: Akilimali <Akilimalisamuelvijey@gmail.com>
+Date:   Tue Jun 11 16:33:40 2019 -0700
+
+    Login update
+
+[33mcommit 6528253189221b272a419b85eb702031ad5cf0ba[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Thu May 16 18:08:39 2019 +0200
+
+    Login screen
+
+[33mcommit edd1bb1a2de4b43e84a46637e903edc6c254352f[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Wed Apr 10 14:07:47 2019 +0200
+
+    Login marche parfaitement
+
+[33mcommit 87c5742ec02edad8d5c387b61acdacee40dd36ae[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Tue Apr 2 16:45:13 2019 +0200
+
+    La verification passe bien mais le seul probleme reste au niveau des null safety, je n'arrive pas a gerer le crachage de l'application par tous les moyens que je connaisse
+
+[33mcommit 5ffbefe4deb3399f83157d101809d018b8f569f7[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Tue Apr 2 16:22:25 2019 +0200
+
+    Le code de verification marche mais ca crache souvent suite aux null safety, je n'arrive pas a regler ce probleme
+
+[33mcommit e8e6e6dd4644753326d2191407e62198ab745650[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Mon Apr 1 23:31:43 2019 +0200
+
+    Connexion a firebase
+
+[33mcommit 8a578ecce2d59008580329dcc968371146c60340[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Mon Apr 1 22:38:41 2019 +0200
+
+    Revision du design de layout pour l'authentication
+
+[33mcommit 8ec06d6a1d4bfe5ea37c2123961f4c03318615f3[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Sun Mar 31 03:05:49 2019 +0300
+
+    Modification de la partie profile pour le choix de la photo
+
+[33mcommit d732c59c6d8f27eb914db4b8fea113bb46ce782f[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Sun Mar 31 00:31:22 2019 +0300
+
+    Le design modifier
+
+[33mcommit 43edf0a2f31fa38940c5139bd676dcb39be0da54[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Sun Mar 31 00:30:45 2019 +0300
+
+    le design complet
+
+[33mcommit d8f767ef9b7b8538ac011bafe62ac9fe964ae970[m
+Author: Akilimali003 <Akilimalisamuelvijey@gmail.com>
+Date:   Sun Mar 24 00:00:21 2019 +0200
+
+    Version initiale

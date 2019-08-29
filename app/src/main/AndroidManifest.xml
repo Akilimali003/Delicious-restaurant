@@ -25,8 +25,11 @@
         </activity>
         <activity android:name=".views.AddressDescription">
         </activity>
-        <activity android:name=".registration.PhoneAuthActivity2"
-                  android:theme="@style/AppTheme.NoActionBar">
+        <activity
+                android:name=".registration.PhoneAuthActivity2"
+                android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".UserProfile">
         </activity>
     </application>
 

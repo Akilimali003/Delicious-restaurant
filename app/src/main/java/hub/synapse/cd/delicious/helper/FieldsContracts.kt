@@ -43,6 +43,7 @@ class FieldsContracts {
         const val r_image="r_image"
         const val r_latitude="r_latitude"
         const val r_longitude="r_longitude"
+
         //2.2. Table User
         private const val u_id="id"
         const val u_name="uname"

@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Delicious</string>
     <string name="username">Username</string>
+    <string name="email">Email</string>
     <string name="phone_number">+(Code) | Phone number</string>
     <string name="edt_mail">Mail address</string>
     <string name="edt_address">Address</string>
@@ -15,6 +16,7 @@
     <string name="app_bar_register">Create account</string>
     <string name="tv_explorer">EXPLORER</string>
     <string name="tv_verify">Verify</string>
+    <string name="tv_user_profile">User profile -></string>
     <string name="tv_verify_detail">Waiting to automatically detect an SMS sent to </string>
     <string name="tv_instruction_auth">Delicious will send an SMS to verify your phone number.\nEnter your country code and phone number. </string>
     <string name="tv_resend_sms"><u>Resend SMS</u></string>
