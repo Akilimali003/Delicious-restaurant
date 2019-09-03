@@ -15,12 +15,16 @@
       },
       "oauth_client": [
         {
-          "client_id": "378308861438-k1cj0kjumkopstf7uehdprmdfghs5mg1.apps.googleusercontent.com",
+          "client_id": "378308861438-aca4scm70ehdlr0uj29ql18q1j3kkd54.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "hub.synapse.cd.delicious",
-            "certificate_hash": "3f558558b58360f13726cc3b687a76b979be9c8d"
+            "certificate_hash": "4a887b0e23507130241d518e616ef13424ef7c0a"
           }
+        },
+        {
+          "client_id": "378308861438-u4tad962k1a1t7u17tcs1drvljpommlo.apps.googleusercontent.com",
+          "client_type": 3
         }
       ],
       "api_key": [
