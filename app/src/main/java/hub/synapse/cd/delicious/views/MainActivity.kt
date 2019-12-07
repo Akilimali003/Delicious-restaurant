@@ -14,7 +14,7 @@ import android.view.View
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import hub.synapse.cd.delicious.R
-import hub.synapse.cd.delicious.registration.PhoneAuthActivity
+import hub.synapse.cd.delicious.registration.LoginActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.addresses_fragment_layout.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.action_sign_out -> {
                 mAuth.signOut()
-                val intent = Intent(this, PhoneAuthActivity::class.java)
+                val intent = Intent(this, LoginActivity::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
             }
@@ -114,7 +114,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     override fun onStart() {
         super.onStart()
         if (mAuth.currentUser == null){
-            startActivity(Intent(this, PhoneAuthActivity::class.java))
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 
@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     private fun verifyUserIsLoggedIn(){
         val uid = FirebaseAuth.getInstance().uid
         if (uid == null){
-            val intent = Intent(this, PhoneAuthActivity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
             startActivity(intent)
         }
