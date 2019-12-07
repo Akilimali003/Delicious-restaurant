@@ -1,9 +1,11 @@
 package hub.synapse.cd.delicious.registration
 
 
+import android.app.ProgressDialog
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import hub.synapse.cd.delicious.R
@@ -12,10 +14,12 @@ import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
+        val progDialog = ProgressDialog(this@LoginActivity)
 
         tv_nothaveyetanaccount_login.setOnClickListener {
             val intent = Intent(this, RegisterActivity::class.java)
@@ -24,7 +28,9 @@ class LoginActivity : AppCompatActivity() {
 
         login_button.setOnClickListener {
 
-            Toast.makeText(this, "Please wait...", Toast.LENGTH_LONG).show()
+            progDialog.setTitle("Connexion")
+            progDialog.setMessage("Patientez svp...")
+            progDialog.show()
             //call the method
             performeLogin()
         }
