@@ -6,6 +6,7 @@
     <string name="edt_mail">Mail address</string>
     <string name="edt_address">Address</string>
     <string name="password">Password</string>
+    <string name="btn_register">Create account</string>
     <string name="btn_register_profile">Save</string>
     <string name="btn_profile_photo">Profile photo</string>
     <string name="btn_login">Login</string>
