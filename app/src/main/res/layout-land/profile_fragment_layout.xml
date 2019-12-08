@@ -13,7 +13,8 @@
             android:layout_width="55dp" android:elevation="10dp"
             android:layout_height="35dp" android:src="@drawable/ic_camera_profile"
             android:layout_alignEnd="@+id/selectphoto_imageview_profile"
-            android:id="@+id/imageViewSelectPhotoProfile" android:layout_marginEnd="1dp"
+            android:id="@+id/imageViewSelectPhotoProfile"
+            android:layout_marginEnd="1dp" android:layout_marginStart="1dp"
             android:layout_alignParentTop="true"
             android:layout_marginTop="144dp"/>
     <de.hdodenhof.circleimageview.CircleImageView

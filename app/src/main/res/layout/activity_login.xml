@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="match_parent"
+              android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
               android:gravity="center_horizontal"
               android:orientation="vertical"
               android:paddingBottom="@dimen/activity_vertical_margin"
@@ -11,19 +11,11 @@
               android:paddingTop="@dimen/activity_vertical_margin"
               tools:context=".registration.LoginActivity">
 
-    <!-- Login progress -->
-    <ProgressBar
-            android:id="@+id/login_progress"
-            style="?android:attr/progressBarStyleLarge"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            android:visibility="gone"/>
-
     <ScrollView
             android:id="@+id/login_form"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
 
         <LinearLayout
                 android:id="@+id/email_login_form"
@@ -31,16 +23,23 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:text="Connecter ->"
+                    android:textSize="30sp"/>
+
             <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
-                <AutoCompleteTextView
-                        android:id="@+id/email"
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/email_login"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/prompt_email"
                         android:inputType="textEmailAddress"
+                        android:hint="@string/edt_mail"
                         android:maxLines="1"
                         android:singleLine="true"/>
 
@@ -48,30 +47,41 @@
 
             <android.support.design.widget.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true">
 
-                <EditText
-                        android:id="@+id/password"
+                <android.support.design.widget.TextInputEditText
+                        android:id="@+id/password_login"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="@string/prompt_password"
                         android:imeActionId="6"
-                        android:imeActionLabel="@string/action_sign_in_short"
                         android:imeOptions="actionUnspecified"
                         android:inputType="textPassword"
+                        android:hint="@string/password"
                         android:maxLines="1"
                         android:singleLine="true"/>
 
             </android.support.design.widget.TextInputLayout>
 
             <Button
-                    android:id="@+id/email_sign_in_button"
+                    android:id="@+id/login_button"
                     style="?android:textAppearanceSmall"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
-                    android:text="@string/action_sign_in"
+                    android:background="@android:color/holo_green_dark"
+                    android:textColor="@android:color/white"
+                    android:text="@string/btn_login"
                     android:textStyle="bold"/>
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_nothaveyetanaccount_login"
+                    android:text="@string/tv_do_not_have_account"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="175dp"/>
 
         </LinearLayout>
     </ScrollView>

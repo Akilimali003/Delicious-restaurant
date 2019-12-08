@@ -5,6 +5,7 @@
     <string name="edt_mail">Adresse e-mail</string>
     <string name="edt_address">Adresse</string>
     <string name="password">Mot de passe</string>
+    <string name="btn_register">Créer compte</string>
     <string name="btn_register_profile">Sauvegarder</string>
     <string name="btn_profile_photo">Photo du profile</string>
     <string name="btn_login">Connexion</string>
