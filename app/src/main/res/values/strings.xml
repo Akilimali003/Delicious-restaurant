@@ -56,4 +56,13 @@
         "Github: https://github.com/SynapseHub\n"
         "Tweeter: @SynapseHub"
     </string>
+
+    <string name="welcome_back">Bienvenue</string>
+    <string name="read_it_together">Vos restaurants à votre portée</string>
+    <string name="booki">Vos restaurants à votre portée</string>
+    <string name="skip">Ignorer</string>
+    <string name="login">Se Connecter</string>
+    <string name="email">Email</string>
+    <string name="sign_up">S\'enregistrer</string>
+    <string name="forget_password">Mot de passe oublié ?</string>
 </resources>

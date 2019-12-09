@@ -25,7 +25,7 @@ class isNetworkConnected {
 /* use like this
 
 if (NetWorkConection.isNEtworkConnected(applicationContext)) {
-    val inent = Intent(this@FirstScreen, MainActivity::class.java)
+    val inent = Intent(this@FirstScreen, MainActivityb::class.java)
     startActivity(inent)
 } else {
     toast("Please turn on your Internet")

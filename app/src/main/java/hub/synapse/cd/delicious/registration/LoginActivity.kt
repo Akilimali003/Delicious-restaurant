@@ -8,8 +8,6 @@ import android.os.Bundle
 import android.support.design.widget.TextInputEditText
 import android.text.TextUtils
 import android.widget.Button
-import android.widget.EditText
-import android.widget.ProgressBar
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import hub.synapse.cd.delicious.R

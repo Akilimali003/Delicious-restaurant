@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#2b4602</color>
-    <color name="colorPrimaryDark">#334e2d</color>
-    <color name="colorAboutText">#347024</color>
-    <color name="colorAccent">#2b4602</color>
+    <color name="colorPrimary">#B24248</color>
+    <color name="colorPrimaryDark">#A2181C</color>
+    <color name="colorAboutText">#BB565B</color>
+    <color name="colorAccent">#723B3F</color>
     <color name="backgroundColor">#e9e7e7</color>
     <color name="btnPhotoProfileColor">#A4ADB1</color>
     <color name="btnRegisterColor">#A4ADB1</color>
     <color name="editTextColor">#A4ADB1</color>
+
+    <color name="colorBackground">#C75050</color>
+    <color name="colorSplashText">#F0F0F0</color>
+    <color name="colorProgressBar">#FFCE511C</color>
+    <color name="colorTextView">#83898E</color>
+
 </resources>
