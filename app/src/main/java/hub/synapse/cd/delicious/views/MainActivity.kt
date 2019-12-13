@@ -15,6 +15,7 @@ import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import hub.synapse.cd.delicious.R
 import hub.synapse.cd.delicious.registration.LoginActivity
+import hub.synapse.cd.delicious.registration.MainActivityb
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.addresses_fragment_layout.*
 import kotlinx.android.synthetic.main.app_bar_main.*
@@ -73,7 +74,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             }
             R.id.action_sign_out -> {
                 mAuth.signOut()
-                val intent = Intent(this, LoginActivity::class.java)
+                val intent = Intent(this, MainActivityb::class.java)
                 intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK.or(Intent.FLAG_ACTIVITY_NEW_TASK)
                 startActivity(intent)
             }

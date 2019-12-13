@@ -15,8 +15,10 @@
     <string name="app_bar_register">Créer compte</string>
     <string name="tv_explorer">EXPLORER</string>
     <string name="tv_verify">Vérifier</string>
-    <string name="tv_verify_detail">En attente de la détection automatique du SMS envoyé au </string>
-    <string name="tv_instruction_auth">Delicious enverra un message pour vérifier votre numéro de téléphone.\nEntrer votre code de pays suivit du numéro de téléphone. </string>
+    <string name="tv_verify_detail">En attente de la détection automatique du SMS envoyé au</string>
+    <string name="tv_instruction_auth">Delicious enverra un message pour vérifier votre numéro de téléphone.\nEntrer
+        votre code de pays suivit du numéro de téléphone.
+    </string>
     <string name="tv_resend_sms">
         <u>Reenvoyer SMS</u>
     </string>
