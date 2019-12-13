@@ -10,20 +10,22 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".views.MainFoodDisplay">
+        </activity>
         <activity
                 android:name=".registration.MainActivityb"
                 android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+        <activity android:name=".views.MainActivity">
+        </activity>
+        <activity android:name=".MainFoodList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity
-                android:name=".views.MainActivity">
-        </activity>
-        <activity
-                android:name=".registration.LoginActivity">
+        <activity android:name=".registration.LoginActivity">
         </activity>
         <activity android:name=".views.AddressDescription">
         </activity>
